@@ -10,7 +10,8 @@
 class Solution {
 public:
     vector<int> preorderTraversal(TreeNode* root) {
-         TreeNode *x = root;  
+        /* 递归实现
+        TreeNode *x = root;  
         vector<TreeNode*> p;  
         vector<int> res;  
         while(x != NULL || p.size() != 0){  
@@ -23,6 +24,24 @@ public:
                 p.pop_back();  
             }  
         }  
-        return res;  
+        return res;
+        */
+        //非递归实现
+        vector<int> result;
+        if(root == NULL)
+            return result;
+        stack<TreeNode*> s;
+        s.push(root);
+        while(!s.empty())
+        {
+            TreeNode* p = s.top();
+            s.pop(); //出栈
+            result.push_back(p->val);
+            if(p->right)
+                s.push(p->right);
+            if(p->left)
+                s.push(p->left);
+        }
+        return result;
     }
 };
