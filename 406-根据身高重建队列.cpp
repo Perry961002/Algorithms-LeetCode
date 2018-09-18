@@ -1,7 +1,7 @@
-class Solution {
+﻿class Solution {
 public:
     vector<pair<int, int>> reconstructQueue(vector<pair<int, int>>& people) {
-        //先按身高排序，然后插入到相应位置上
+        //先按身高排序，然后从左往右插入到相应位置上
         vector<pair<int, int>> result;
         sort(people.begin(), people.end(), [](pair<int, int> a, pair<int, int> b)
              {
