@@ -1,4 +1,4 @@
-Algorithm changes the world
+Algorithms change the world
 ===========================
 - 目前已完成情况： `311 / 728`
   - 简单：`18.39 %`
