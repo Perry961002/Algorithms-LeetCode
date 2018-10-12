@@ -8,7 +8,7 @@ public:
         {
             while(!deq.empty() && i - deq.front() >= k) //窗口元素的数量将超过k,队头元素出队
                 deq.pop_front();
-            while(!deq.empty() && nums[i] >= nums[deq.back()])  //队头元素比nums[i]大就删除
+            while(!deq.empty() && nums[i] >= nums[deq.back()])  //队尾元素比nums[i]小或相等就删除
                 deq.pop_back();
             deq.push_back(i);
             if(i >= k - 1)
