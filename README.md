@@ -1,5 +1,7 @@
 Algorithms change the world
 ===========================
+[![MIT license](https://img.shields.io/dub/l/vibe-d.svg)](https://github.com/Perry961002/LeetCode/blob/master/LICENSE)
+
 - 目前已完成情况： `311 / 728`
   - 简单：`18.39 %`
   - 中等：`64.19 %`
