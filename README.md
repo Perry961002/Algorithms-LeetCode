@@ -1,6 +1,6 @@
 Algorithms change the world
 ==============================
-[![MIT license](https://img.shields.io/dub/l/vibe-d.svg)](https://github.com/Perry961002/LeetCode/blob/master/LICENSE)
+ >>[![MIT license](https://img.shields.io/dub/l/vibe-d.svg)](https://github.com/Perry961002/LeetCode/blob/master/LICENSE)
 
  🎉经典算法的实现
 -------------------
