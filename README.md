@@ -4,7 +4,7 @@ Algorithms change the world
 
  🎉经典算法的实现
 -------------------
-- 🔧[Manachersfa](https://github.com/Perry961002/LeetCode/blob/master/%E4%B8%80%E4%BA%9B%E7%BB%8F%E5%85%B8%E7%AE%97%E6%B3%95%E7%9A%84%E5%AE%9E%E7%8E%B0/Manacher.cpp)
+- 🔧[Manacher算法](https://github.com/Perry961002/LeetCode/blob/master/%E4%B8%80%E4%BA%9B%E7%BB%8F%E5%85%B8%E7%AE%97%E6%B3%95%E7%9A%84%E5%AE%9E%E7%8E%B0/Manacher.cpp)
 
 - 🔧[快速排序的递归和非递归实现](https://github.com/Perry961002/LeetCode/blob/master/%E4%B8%80%E4%BA%9B%E7%BB%8F%E5%85%B8%E7%AE%97%E6%B3%95%E7%9A%84%E5%AE%9E%E7%8E%B0/QuickSort.cpp)
 
