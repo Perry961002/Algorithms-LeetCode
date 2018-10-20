@@ -1,29 +1,27 @@
 class Solution {
 public:
     bool canCross(vector<int>& stones) {
-        unordered_map<int, set<int>> dp;
-		int u = 0, v = 0, w = 0;
-		set<int> st;
-		set<int>::iterator it;
-		dp[0].insert(1);//从0号开始可以向前跳的步数
-		for (int i = 0; i < stones.size(); ++i)
-            st.insert(stones[i]);
-		for (int i = 0; i < stones.size(); ++i){
-			u = stones[i];
-			if (dp.find(u) == dp.end())
-                continue;
-			if (u == stones[stones.size() - 1])
-                break;
-			for (it = dp[u].begin(); it != dp[u].end(); ++it){
-				w = *it;//当前step
-				v = u + w;//当前到达的石头的Unit
-				if (st.find(v) != st.end() && v > u){
-					dp[v].insert(w - 1);
-					dp[v].insert(w);
-					dp[v].insert(w + 1);
-				}
-			}
-		}
-		return dp.find(u) != dp.end() && dp[u].size() > 0;
+        unordered_map<int, unordered_set<int> > dp;//记录到达每个位置的所有步长
+        //初始化
+        for(int stone : stones){
+            dp[stone] = {};
+        }
+        dp[0].insert(0);
+        //遍历每个位置
+        for(int stone : stones){
+            //遍历所有的前驱
+            for(int lastJump : dp[stone]){
+                //三种跳跃步长
+                for(int jumpSize = lastJump - 1; jumpSize <= lastJump + 1; jumpSize ++){
+                    //下次跳到的位置有效
+                    if(jumpSize > 0 && dp.count(stone + jumpSize)){
+                        //记录下一个位置的信息
+                        dp[stone + jumpSize].insert(jumpSize);
+                    }
+                }
+            }
+        }
+        //最后一个位置有前驱位置返回true
+        return !dp[stones.back()].empty();
     }
 };
