@@ -1,4 +1,4 @@
-Algorithms change the world
+<span style="color: red">Algorithms change the world</span>
 ==============================
  >>[![MIT license](https://img.shields.io/dub/l/vibe-d.svg)](https://github.com/Perry961002/LeetCode/blob/master/LICENSE)
 
