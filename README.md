@@ -16,7 +16,7 @@ Algorithms change the world
  ----------------------
  - 🔧[第287题证明(映射,环检测)](https://github.com/Perry961002/LeetCode/blob/master/%E9%83%A8%E5%88%86%E9%A2%98%E7%9B%AE%E7%9A%84%E5%88%86%E6%9E%90%E5%92%8C%E8%AF%81%E6%98%8E/287%E9%97%AE%E9%A2%98%E5%88%86%E6%9E%90.pdf)
  
- - 🔧[状态机用到动态规划](https://github.com/Perry961002/LeetCode/blob/master/%E9%83%A8%E5%88%86%E9%A2%98%E7%9B%AE%E7%9A%84%E5%88%86%E6%9E%90%E5%92%8C%E8%AF%81%E6%98%8E/309%E9%A2%98%E7%9A%84%E6%80%9D%E8%B7%AF%E8%A7%A3%E5%86%B3.pdf)
+ - 🔧[309题状态机用到动态规划](https://github.com/Perry961002/LeetCode/blob/master/%E9%83%A8%E5%88%86%E9%A2%98%E7%9B%AE%E7%9A%84%E5%88%86%E6%9E%90%E5%92%8C%E8%AF%81%E6%98%8E/309%E9%A2%98%E7%9A%84%E6%80%9D%E8%B7%AF%E8%A7%A3%E5%86%B3.pdf)
  
  - 🔧[Catalan公式证明(建立双射法)](https://github.com/Perry961002/LeetCode/blob/master/%E9%83%A8%E5%88%86%E9%A2%98%E7%9B%AE%E7%9A%84%E5%88%86%E6%9E%90%E5%92%8C%E8%AF%81%E6%98%8E/Catalan.jpg)
  
