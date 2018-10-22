@@ -2,7 +2,7 @@ Algorithms change the world
 ==============================
  >>[![MIT license](https://img.shields.io/dub/l/vibe-d.svg)](https://github.com/Perry961002/LeetCode/blob/master/LICENSE)
 
- 🎉经典算法的实现
+ 🎉经典算法的实现：
 -------------------
 - 🔧[Manacher算法](https://github.com/Perry961002/LeetCode/blob/master/%E4%B8%80%E4%BA%9B%E7%BB%8F%E5%85%B8%E7%AE%97%E6%B3%95%E7%9A%84%E5%AE%9E%E7%8E%B0/Manacher.cpp)
 
