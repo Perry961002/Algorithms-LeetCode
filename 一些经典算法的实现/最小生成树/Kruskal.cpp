@@ -14,7 +14,7 @@ bool cmp(const Edge& a, const Edge& b){
 }
 
 //为点创造不相交集合
-//返回数组vector<pair<int, int>> parent, parent[i].first表示点i的祖先节点,parent[i].second表示点isuoz集合的大小
+//返回数组vector<pair<int, int>> parent, parent[i].first表示点i的祖先节点,parent[i].second表示属于同一祖先集合的大小
 vector<pair<int, int>> MakeSet(int n){
 	vector<pair<int, int>> parent;
 	for (int i = 0; i < n; i++){
@@ -30,7 +30,7 @@ int FindParent(vector<pair<int, int>>& parent, int x){
 	return x;
 }
 
-//将两个不同祖先的数合并为同一个祖先
+//将两个不同祖先的合并为同一个祖先
 void Union(vector<pair<int, int>>& parent, int x, int y){
 	//把集合小的归到大的里面,这样查询时可以减少查询次数
 	if (parent[x].second > parent[y].second){
