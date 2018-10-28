@@ -25,6 +25,8 @@ Algorithms change the world
 - 🔧最小生成树
     - [Kruskal算法](https://github.com/Perry961002/Algorithms-LeetCode/blob/master/%E4%B8%80%E4%BA%9B%E7%BB%8F%E5%85%B8%E7%AE%97%E6%B3%95%E7%9A%84%E5%AE%9E%E7%8E%B0/%E6%9C%80%E5%B0%8F%E7%94%9F%E6%88%90%E6%A0%91/Kruskal.cpp)
 
+    - [Prim算法](https://github.com/Perry961002/Algorithms-LeetCode/blob/master/%E4%B8%80%E4%BA%9B%E7%BB%8F%E5%85%B8%E7%AE%97%E6%B3%95%E7%9A%84%E5%AE%9E%E7%8E%B0/%E6%9C%80%E5%B0%8F%E7%94%9F%E6%88%90%E6%A0%91/Prim.cpp)
+
  🎉部分题目的证明:
  ----------------------
  - 🔧[第287题证明(映射,环检测)](https://github.com/Perry961002/LeetCode/blob/master/%E9%83%A8%E5%88%86%E9%A2%98%E7%9B%AE%E7%9A%84%E5%88%86%E6%9E%90%E5%92%8C%E8%AF%81%E6%98%8E/287%E9%97%AE%E9%A2%98%E5%88%86%E6%9E%90.pdf)
