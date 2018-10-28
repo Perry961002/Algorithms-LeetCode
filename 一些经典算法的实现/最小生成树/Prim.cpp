@@ -3,9 +3,9 @@
 #include<queue>
 using namespace std;
 
-//存放在优先队列中的节点
+//存放在邻接表中的节点
 struct Node{
-	int id;//当前点的前驱节点
+	int id;//当前点的编号
 	int key;//边的权值
 	//构造方法
 	Node(int x, int k) :id(x), key(k){}
