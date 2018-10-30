@@ -38,6 +38,13 @@ Algorithms change the world
 
     - [非负权重有向图的Dijkstra算法](https://github.com/Perry961002/Algorithms-LeetCode/blob/master/%E4%B8%80%E4%BA%9B%E7%BB%8F%E5%85%B8%E7%AE%97%E6%B3%95%E7%9A%84%E5%AE%9E%E7%8E%B0/%E5%8D%95%E6%BA%90%E7%82%B9%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84/Dijkstra.cpp)
 
+- 🔧所有节点对最短路径
+    - [基于重复平方矩阵乘法的动态规划算法](https://github.com/Perry961002/Algorithms-LeetCode/blob/master/%E4%B8%80%E4%BA%9B%E7%BB%8F%E5%85%B8%E7%AE%97%E6%B3%95%E7%9A%84%E5%AE%9E%E7%8E%B0/%E6%89%80%E6%9C%89%E8%8A%82%E7%82%B9%E5%AF%B9%E7%9A%84%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/Faster_APSP.cpp)
+
+    - [Floyd-Warshall算法](https://github.com/Perry961002/Algorithms-LeetCode/blob/master/%E4%B8%80%E4%BA%9B%E7%BB%8F%E5%85%B8%E7%AE%97%E6%B3%95%E7%9A%84%E5%AE%9E%E7%8E%B0/%E6%89%80%E6%9C%89%E8%8A%82%E7%82%B9%E5%AF%B9%E7%9A%84%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/Floyd_Warshall.cpp)
+
+    - [有向图的传递闭包求解算法](https://github.com/Perry961002/Algorithms-LeetCode/blob/master/%E4%B8%80%E4%BA%9B%E7%BB%8F%E5%85%B8%E7%AE%97%E6%B3%95%E7%9A%84%E5%AE%9E%E7%8E%B0/%E6%89%80%E6%9C%89%E8%8A%82%E7%82%B9%E5%AF%B9%E7%9A%84%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/Transitive_Closure.cpp)
+
  🎉部分题目的证明:
  ----------------------
  - 🔧[第287题证明(映射,环检测)](https://github.com/Perry961002/LeetCode/blob/master/%E9%83%A8%E5%88%86%E9%A2%98%E7%9B%AE%E7%9A%84%E5%88%86%E6%9E%90%E5%92%8C%E8%AF%81%E6%98%8E/287%E9%97%AE%E9%A2%98%E5%88%86%E6%9E%90.pdf)
