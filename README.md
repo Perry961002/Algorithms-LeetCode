@@ -22,7 +22,9 @@ Algorithms change the world
 
 - 🔧[堆排序和优先队列](https://github.com/Perry961002/LeetCode/blob/master/%E4%B8%80%E4%BA%9B%E7%BB%8F%E5%85%B8%E7%AE%97%E6%B3%95%E7%9A%84%E5%AE%9E%E7%8E%B0/%E5%A0%86%E6%8E%92%E5%BA%8F%E4%B8%8E%E4%BC%98%E5%85%88%E9%98%9F%E5%88%97.cpp)
 
-- 🔧[二叉搜索树(BST)](https://github.com/Perry961002/Algorithms-LeetCode/blob/master/%E4%B8%80%E4%BA%9B%E7%BB%8F%E5%85%B8%E7%AE%97%E6%B3%95%E7%9A%84%E5%AE%9E%E7%8E%B0/BST.cpp)
+- 🔧[二叉搜索树(BST)](https://github.com/Perry961002/Algorithms-LeetCode/blob/master/%E4%B8%80%E4%BA%9B%E7%BB%8F%E5%85%B8%E7%AE%97%E6%B3%95%E7%9A%84%E5%AE%9E%E7%8E%B0/BST.cpp)(其中删除节点操作在LeetCode刷题时使用了[递归方法](https://github.com/Perry961002/LeetCode/blob/master/C%2B%2B%E7%89%88/450-%E5%88%A0%E9%99%A4%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%E4%B8%AD%E7%9A%84%E8%8A%82%E7%82%B9.cpp))
+
+- 🔧[红黑树](https://github.com/Perry961002/Algorithms-LeetCode/blob/master/%E4%B8%80%E4%BA%9B%E7%BB%8F%E5%85%B8%E7%AE%97%E6%B3%95%E7%9A%84%E5%AE%9E%E7%8E%B0/RB_Tree)
 
 - 🔧[有向无环图的拓扑排序算法](https://github.com/Perry961002/Algorithms-LeetCode/blob/master/%E4%B8%80%E4%BA%9B%E7%BB%8F%E5%85%B8%E7%AE%97%E6%B3%95%E7%9A%84%E5%AE%9E%E7%8E%B0/Topological_Sort.cpp)
 
