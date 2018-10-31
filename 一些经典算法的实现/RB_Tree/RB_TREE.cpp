@@ -8,89 +8,89 @@ using namespace std;
 RBNode nil(-1);
 RBNode *NIL = &nil;
 
-//�ڵ㹹��
+//节点构造
 RBNode::RBNode(int k):key(k){
 	parent = left = right = NIL;
 	color = BLACK;
 }
 
-//���������
+//红黑树构造
 RB_Tree::RB_Tree(RBNode *n) :root(n){
 	n->parent = n->left = n->right = NIL;
 }
 
-//��xΪ���Ľ�������
+//以x为中心进行左旋
 void RB_Tree::LeftRotate( RBNode *x){
-	RBNode *y = x->right;//ȡx����ڵ�
-	x->right = y->left;//y�����ӱ��x���Һ���
-	//y����x�ĸ��׽ڵ�
+	RBNode *y = x->right;//取x的左节点
+	x->right = y->left;//y的左孩子变成x的右孩子
+	//y连上x的父亲节点
 	if (y->left != NIL)
 		y->left->parent = x;
 	y->parent = x->parent;
-	//����x�����ҽڵ�������ȷ��y����x���ڵ���ĸ���֧��
-	//x�Ǹ�
+	//根据x是左右节点的情况来确定y连到x父节点的哪个分支上
+	//x是根
 	if (x->parent == NIL)
 		root = y;
-	//�Ǹ��ڵ������
+	//是父节点的左孩子
 	else if (x == x->parent->left)
 		x->parent->left = y;
 	else
 		x->parent->right = y;
 
-	//��x�ŵ�y��������
+	//把x放到y的左孩子上
 	y->left = x;
-	x->parent = y;//�޸�x�ĸ��׽ڵ�Ϊy����������
+	x->parent = y;//修改x的父亲节点为y才算是连上
 }
 
-//��xΪ���Ľ�������
+//以x为中心进行右旋
 void RB_Tree::RightRotate(RBNode *x){
-	RBNode *y = x->left;//ȡx����ڵ�
-	x->left = y->right;//y�����ӱ��x���Һ���
-	//y����x�ĸ��׽ڵ�
+	RBNode *y = x->left;//取x的左节点
+	x->left = y->right;//y的左孩子变成x的右孩子
+	//y连上x的父亲节点
 	if (y->right != NIL)
 		y->right->parent = x;
 	y->parent = x->parent;
-	//����x�����ҽڵ�������ȷ��y����x���ڵ���ĸ���֧��
-	//x�Ǹ�
+	//根据x是左右节点的情况来确定y连到x父节点的哪个分支上
+	//x是根
 	if (x->parent == NIL)
 		root = y;
-	//�Ǹ��ڵ������
+	//是父节点的左孩子
 	else if (x == x->parent->left)
 		x->parent->left = y;
 	else
 		x->parent->right = y;
 
-	//��x�ŵ�y���Һ�����
+	//把x放到y的右孩子上
 	y->right = x;
-	x->parent = y;//�޸�x�ĸ��׽ڵ�Ϊy����������
+	x->parent = y;//修改x的父亲节点为y才算是连上
 }
 
-//��ǰ�������ʽ���������,�ҵ��ͷ���true
+//以前序遍历方式搜索红黑树,找到就返回true
 RBNode* RB_Tree::RBTSearch(int k){
 	RBNode *x = root;
 	while (x != NIL){
 		if (x->key == k)
 			return x;
-		//������������
+		//迭代到右子树
 		else if (x->key < k)
 			x = x->right;
 		else
 			x = x->left;
 	}
-	return x;//û���ҵ�
+	return x;//没有找到
 }
 
-//���ڵ�z���뵽�����
+//将节点z插入到红黑树
 bool RB_Tree::RBTInsert(RBNode *z){
 	if (RBTSearch(z->key) != NIL){
-		cout << "�����ؼ�ֵΪ" << z->key << "�Ľڵ��Ѿ�����" << endl;
+		cout << "包含关键值为" << z->key << "的节点已经存在" << endl;
 		return false;
 	}
 	else{
-		//����zӦ�ñ������λ��,������ɫ��Ϊ��
+		//先找z应该被插入的位置,并把颜色设为红
 		RBNode *x = root;
 		RBNode *y = NIL;
-		//�ҵ�zӦ�õ�λ��
+		//找到z应该的位置
 		while (x != NIL){
 			y = x;
 			if (z->key < x->key)
@@ -99,31 +99,31 @@ bool RB_Tree::RBTInsert(RBNode *z){
 				x = x->right;
 		}
 		z->parent = y;
-		//ȷ��zӦ���Ǹ��׽ڵ���ĸ�����
+		//确定z应该是父亲节点的哪个孩子
 		if (y == NIL)
 			root = z;
 		else if (z->key < y->key)
 			y->left = z;
 		else
 			y->right = z;
-		//��z�ĺ�������NIL��,����Ϊ��ɫ
+		//把z的孩子连到NIL上,并设为红色
 		z->left = NIL;
 		z->right = NIL;
 		z->color = RED;
-		//��Ϊz����ɫΪ��,�п����ƻ������������
+		//因为z的颜色为红,有可能破坏红黑树的性质
 		RBTInsertFixup(z);
 	}
 	return true;
 }
 
-//��Ϊz�Ǻ�ɫ,���z�Ǹ��ڵ㣬��ô����2���ƻ�,���z�ĸ����Ǻ�ɫ,��ô����4���ƻ�
+//因为z是红色,如果z是根节点，那么性质2被破坏,如果z的父亲是红色,那么性质4被破坏
 void RB_Tree::RBTInsertFixup(RBNode *z){
 	while (z->parent->color == RED){
-		//z�ĸ�����z���游������
+		//z的父亲是z的祖父的左孩子
 		if (z->parent == z->parent->parent->left){
-			//y��z����ڵ�
+			//y是z的叔节点
 			RBNode *y = z->parent->parent->right;
-			//z���׺�y���Ǻ�ɫ,Ӧ�ð�z���׺�y����ɺ�ɫ,��z���游��ɺ�ɫ(��������5),Ȼ����游��Ϊ�µ�z���ظ�����
+			//z父亲和y都是红色,应该把z父亲和y都变成黑色,把z的祖父变成红色(保持性质5),然后把祖父作为新的z来重复调整
 			if (y->color == RED){
 				z->parent->color = BLACK;
 				y->color = BLACK;
@@ -131,27 +131,27 @@ void RB_Tree::RBTInsertFixup(RBNode *z){
 				z = z->parent->parent;
 			}
 			else{
-				//z����ڵ�y�Ǻ�ɫ
-				//z���Һ���
+				//z的叔节点y是黑色
+				//z是右孩子
 				if (z == z->parent->right){
 					z = z->parent;
-					//����,z������
+					//左旋,z成左孩子
 					LeftRotate(z);
 				}
-				//z������
-				//z�ĸ��ױ�ɺ�ɫ
+				//z是左孩子
+				//z的父亲变成黑色
 				z->parent->color = BLACK;
-				//z���游��ɺ�ɫ,��������5
+				//z的祖父变成红色,保持性质5
 				z->parent->parent->color = RED;
-				//����,z�ĸ��ױ�ɺ�ɫ,while����
+				//右旋,z的父亲变成黑色,while结束
 				RightRotate(z->parent->parent);
 			}
 		}
 		else{
-			//z�ĸ�����z���游���Һ���
-			//y��z����ڵ�
+			//z的父亲是z的祖父的右孩子
+			//y是z的叔节点
 			RBNode *y = z->parent->parent->left;
-			//z���׺�y���Ǻ�ɫ,Ӧ�ð�z���׺�y����ɺ�ɫ,��z���游��ɺ�ɫ(��������5),Ȼ����游��Ϊ�µ�z���ظ�����
+			//z父亲和y都是红色,应该把z父亲和y都变成黑色,把z的祖父变成红色(保持性质5),然后把祖父作为新的z来重复调整
 			if (y->color == RED){
 				z->parent->color = BLACK;
 				y->color = BLACK;
@@ -159,28 +159,28 @@ void RB_Tree::RBTInsertFixup(RBNode *z){
 				z = z->parent->parent;
 			}
 			else{
-				//z����ڵ�y�Ǻ�ɫ
-				//z������
+				//z的叔节点y是黑色
+				//z是左孩子
 				if (z == z->parent->left){
 					z = z->parent;
-					//����,z���Һ���
+					//右旋,z成右孩子
 					RightRotate(z);
 				}
-				//z���Һ���
-				//z�ĸ��ױ�ɺ�ɫ
+				//z是右孩子
+				//z的父亲变成黑色
 				z->parent->color = BLACK;
-				//z���游��ɺ�ɫ,��������5
+				//z的祖父变成红色,保持性质5
 				z->parent->parent->color = RED;
-				//����,z�ĸ��ױ�ɺ�ɫ,while����
+				//右旋,z的父亲变成黑色,while结束
 				LeftRotate(z->parent->parent);
 			}
 		}
 	}
-	//z�Ǹ��ڵ�,��ɫ
+	//z是根节点,黑色
 	root->color = BLACK;
 }
 
-//������xΪ������С�ڵ�
+//返回以x为根的最小节点
 RBNode* RB_Tree::RBMINIMUM(RBNode *x){
 	RBNode *y = x;
 	while (y->left != NIL)
@@ -188,7 +188,7 @@ RBNode* RB_Tree::RBMINIMUM(RBNode *x){
 	return y;
 }
 
-//�滻�����ڵ�
+//替换两个节点
 void RB_Tree::RBTTansplant(RBNode *u, RBNode *v){
 	if (u->parent == NIL)
 		root = v;
@@ -199,17 +199,17 @@ void RB_Tree::RBTTansplant(RBNode *u, RBNode *v){
 	v->parent = u->parent;
 }
 
-//ɾ���ڵ�
+//删除节点
 bool RB_Tree::RBTDelete(int k){
 	RBNode *z, *x;
 	z = RBTSearch(k);
 	if (z == NIL){
-		cout << "�����ؼ�ֵΪ" << z->key << "�Ľڵ㲻����" << endl;
+		cout << "包含关键值为" << z->key << "的节点不存在" << endl;
 		return false;
 	}
 	else{
 		RBNode *y = z;
-		NodeColor y_original_color = y->color;//����y�ĳ�ʼ��ɫ
+		NodeColor y_original_color = y->color;//保存y的初始颜色
 		if (z->left == NIL){
 			x = z->right;
 			RBTTansplant(z, z->right);
@@ -219,23 +219,23 @@ bool RB_Tree::RBTDelete(int k){
 			RBTTansplant(z, z->left);
 		}
 		else{
-			//y��z�ĺ�̽ڵ�
+			//y是z的后继节点
 			y = RBMINIMUM(z->right);
 			y_original_color = y->color;
-			x = y->right;//x��y���Һ���
-			//y����z�ĺ���
+			x = y->right;//x是y的右孩子
+			//y就是z的孩子
 			if (y->parent == z)
 				x->parent = y;
 			else{
-				//��y���Һ���x�ŵ�y��λ��
+				//把y的右孩子x放到y的位置
 				RBTTansplant(y, y->right);
-				//��z���Һ�����Ϊy���Һ���
+				//将z的右孩子作为y的右孩子
 				y->right = z->right;
 				y->right->parent = y;
 			}
-			//��y��z
+			//用y换z
 			RBTTansplant(z, y);
-			//��ԭ��z��������Ϊy���Һ���
+			//把原来z的左孩子作为y的右孩子
 			y->left = z->left;
 			y->left->parent = y;
 			y->color = z->color;
@@ -247,35 +247,35 @@ bool RB_Tree::RBTDelete(int k){
 	}
 }
 
-//ɾ������������
+//删除后调整红黑树
 void RB_Tree::RBTDeleteFixup(RBNode *x){
 	while (x != root && x->color == BLACK){
-		//x��������
+		//x是左子树
 		if (x == x->parent->left){
-			//w���ֵܽڵ�
+			//w是兄弟节点
 			RBNode *w = x->parent->right;
-			//�ֵܽڵ�w�Ǻ�ɫ,w�Ľڵ�����Ǻ�ɫ,�ı�w��x���ڵ����ɫ,��x���ڵ�����
+			//兄弟节点w是红色,w的节点必须是黑色,改变w和x父节点的颜色,对x父节点左旋
 			if (w->color == RED){
 				w->color = BLACK;
 				x->parent->color = RED;
 				LeftRotate(x->parent);
 				w = x->parent->right;
 			}
-			//w�Ǻ�ɫ,w�������ӽڵ��Ǻ�ɫ,w��Ϊ��ɫ,Ϊ�˲���ȥ���һ����ɫ,��x���ڵ��ϲ�һ����ɫ
+			//w是黑色,w的两个子节点是黑色,w置为红色,为了补偿去掉的一个黑色,在x父节点上补一个黑色
 			if (w->left->color == BLACK && w->right->color == BLACK){
 				w->color = RED;
 				x = x->parent;
 			}
 			else {
-				//w�Ǻ�ɫ,w�������Ǻ�ɫ,w���Һ����Ǻ�ɫ
+				//w是黑色,w的左孩子是红色,w的右孩子是黑色
 				if (w->right->color == BLACK){
-					//����w��w���ӵ���ɫ,�ٶ�w����
+					//交换w和w左孩子的颜色,再对w右旋
 					w->left->color = BLACK;
 					w->color = RED;
 					RightRotate(w);
 					w = x->parent->right;
 				}
-				//w�Ǻ�ɫ��,w���Һ����Ǻ�ɫ��
+				//w是黑色的,w的右孩子是红色的
 				w->color = x->parent->color;
 				x->parent->color = BLACK;
 				w->right->color = BLACK;
@@ -284,30 +284,30 @@ void RB_Tree::RBTDeleteFixup(RBNode *x){
 			}
 		}
 		else{
-			//w���ֵܽڵ�
+			//w是兄弟节点
 			RBNode *w = x->parent->left;
-			//�ֵܽڵ�w�Ǻ�ɫ,w�Ľڵ�����Ǻ�ɫ,�ı�w��x���ڵ����ɫ,��x���ڵ�����
+			//兄弟节点w是红色,w的节点必须是黑色,改变w和x父节点的颜色,对x父节点左旋
 			if (w->color == RED){
 				w->color = BLACK;
 				x->parent->color = RED;
 				RightRotate(x->parent);
 				w = x->parent->left;
 			}
-			//w�Ǻ�ɫ,w�������ӽڵ��Ǻ�ɫ,w��Ϊ��ɫ,Ϊ�˲���ȥ���һ����ɫ,��x���ڵ��ϲ�һ����ɫ
+			//w是黑色,w的两个子节点是黑色,w置为红色,为了补偿去掉的一个黑色,在x父节点上补一个黑色
 			if (w->left->color == BLACK && w->right->color == BLACK){
 				w->color = RED;
 				x = x->parent;
 			}
 			else {
-				//w�Ǻ�ɫ,w�������Ǻ�ɫ,w���Һ����Ǻ�ɫ
+				//w是黑色,w的左孩子是红色,w的右孩子是黑色
 				if (w->left->color == BLACK){
-					//����w��w���ӵ���ɫ,�ٶ�w����
+					//交换w和w左孩子的颜色,再对w右旋
 					w->right->color = BLACK;
 					w->color = RED;
 					LeftRotate(w);
 					w = x->parent->left;
 				}
-				//w�Ǻ�ɫ��,w���Һ����Ǻ�ɫ��
+				//w是黑色的,w的右孩子是红色的
 				w->color = x->parent->color;
 				x->parent->color = BLACK;
 				w->left->color = BLACK;
@@ -319,27 +319,27 @@ void RB_Tree::RBTDeleteFixup(RBNode *x){
 	x->color = BLACK;
 }
 
-//�������
+//中序遍历
 void RB_Tree::InOrderTraverse(){
 	RBNode *y = root;
 	stack<RBNode *> s;
 	while (y != NIL || !s.empty()){
-		//����������ߵĽڵ���ջ
+		//将所有最左边的节点入栈
 		if (y != NIL){
 			s.push(y);
 			y = y->left;
 		}
 		else{
-			//������ڵ�
+			//访问左节点
 			y = s.top();
 			s.pop();
 			if (y->color == 0){
-				cout << y->key << "��"<< " ";
+				cout << y->key << "红"<< " ";
 			}
 			else{
-				cout << y->key << "��" << " ";
+				cout << y->key << "黑" << " ";
 			}
-			//yΪҶ�ڵ�ʱ�´�ȡ�����Ǹ��ڵ�,����������ӽڵ�
+			//y为叶节点时下次取出的是根节点,否则就是右子节点
 			y = y->right;
 		}
 	}
