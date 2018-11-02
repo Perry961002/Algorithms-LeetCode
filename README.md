@@ -28,10 +28,10 @@ Algorithms change the world
 
 - 🔧[一种自平衡二叉搜索树---红黑树](https://github.com/Perry961002/Algorithms-LeetCode/blob/master/%E4%B8%80%E4%BA%9B%E7%BB%8F%E5%85%B8%E7%AE%97%E6%B3%95%E7%9A%84%E5%AE%9E%E7%8E%B0/RB_Tree)
 
-- 🔧[图的两种遍历方式]
-    - [广度优先遍历](https://github.com/Perry961002/Algorithms-LeetCode/blob/master/%E4%B8%80%E4%BA%9B%E7%BB%8F%E5%85%B8%E7%AE%97%E6%B3%95%E7%9A%84%E5%AE%9E%E7%8E%B0/Graph_Search/BFS.cpp)这种方式最终会生成关于图的一棵广度优先树,得到源点s到其余点的最短路径(边数最少)
+- 🔧图的两种遍历方式
+    - [广度优先遍历](https://github.com/Perry961002/Algorithms-LeetCode/blob/master/%E4%B8%80%E4%BA%9B%E7%BB%8F%E5%85%B8%E7%AE%97%E6%B3%95%E7%9A%84%E5%AE%9E%E7%8E%B0/Graph_Search/BFS.cpp) 这种方式最终会生成关于图的一棵广度优先树,得到源点s到其余点的最短路径(边数最少)
 
-    - [深度优先搜索](https://github.com/Perry961002/Algorithms-LeetCode/blob/master/%E4%B8%80%E4%BA%9B%E7%BB%8F%E5%85%B8%E7%AE%97%E6%B3%95%E7%9A%84%E5%AE%9E%E7%8E%B0/Graph_Search/DFS.cpp)这种方式最终会生成关于图的深度优先森林,节点访问时间和结束时间具有括号化结构
+    - [深度优先搜索](https://github.com/Perry961002/Algorithms-LeetCode/blob/master/%E4%B8%80%E4%BA%9B%E7%BB%8F%E5%85%B8%E7%AE%97%E6%B3%95%E7%9A%84%E5%AE%9E%E7%8E%B0/Graph_Search/DFS.cpp) 这种方式最终会生成关于图的深度优先森林,节点访问时间和结束时间具有括号化结构
 
 - 🔧[有向无环图的拓扑排序算法](https://github.com/Perry961002/Algorithms-LeetCode/blob/master/%E4%B8%80%E4%BA%9B%E7%BB%8F%E5%85%B8%E7%AE%97%E6%B3%95%E7%9A%84%E5%AE%9E%E7%8E%B0/Topological_Sort.cpp)
 
