@@ -1,5 +1,6 @@
 #include<iostream>
 #include<vector>
+#include<stack>
 using namespace std;
 
 class BSTNode{
@@ -20,6 +21,58 @@ void InorderTreeWalk(BSTNode* x){
 		InorderTreeWalk(x->right);
 	}
 	return;
+}
+
+//中序遍历的非递归实现
+void InorderUseStack(BSTNode* root){
+	stack<BSTNode*> s;
+	BSTNode *node = root;
+	while (node != nullptr || !s.empty()){
+		if (node != nullptr){
+			s.push(node);
+			node = node->left;
+		}
+		else{
+			node = s.top();
+			s.pop();
+			cout << node->val << " ";
+			node = node->right;
+		}
+	}
+}
+
+//不使用辅助栈的中序遍历
+void InorderMorris(BSTNode* root){
+	BSTNode *cur = root, *pre = nullptr;
+	while (cur != nullptr){
+		//当前节点的左子树不存在
+		if (cur->left == nullptr){
+			cout << cur->val << " ";
+			//把当前节点换成右子树
+			cur = cur->right;
+		}
+		else{
+			pre = cur->left;
+			//找到前驱节点
+			while (pre->right != nullptr && pre->right != cur){
+				pre = pre->right;
+			}
+			//前驱节点没有处理过
+			if (pre->right == nullptr){
+				//处理前驱节点
+				pre->right = cur;
+				//左子树
+				cur = cur->left;
+			}
+			else{
+				//还原回去
+				pre->right = nullptr;
+				cout << cur->val << " ";
+				//把当前节点换成右子树
+				cur = cur->right;
+			}
+		}
+	}
 }
 
 //查找关键值为k的节点
@@ -142,6 +195,8 @@ int main(){
 	}
 	cout << "构造的二叉搜索树为：";
 	InorderTreeWalk(root);
+	//InorderUseStack(root);
+	//InorderMorris(root);
 	cout << endl;
 	int input = 0;
 	while (1){
@@ -156,6 +211,8 @@ int main(){
 	}
 	cout << "新的二叉搜索树为：";
 	InorderTreeWalk(root);
+	//InorderUseStack(root);
+	//InorderMorris(root);
 	cout << endl;
 	while (1){
 		cout << "输入一个你需要删除节点的值，没有的话输入-1：";
@@ -172,6 +229,8 @@ int main(){
 	}
 	cout << "新的二叉搜索树为：";
 	InorderTreeWalk(root);
+	//InorderUseStack(root);
+	//InorderMorris(root);
 	cout << endl;
 	system("pause");
 }
