@@ -9,7 +9,19 @@
  */
 class Solution {
 public:
+    int target;
+    void inorder(TreeNode* root, int &res){
+        if(root->left)
+            inorder(root->left, res);
+        --target;
+        if(target == 0){
+            res = root->val;
+        }
+        if(root->right)
+            inorder(root->right, res);
+    }
     int kthSmallest(TreeNode* root, int k) {
+        /*
         //方法一栈实现
         stack<TreeNode*> s;
         int count = k;
@@ -32,5 +44,10 @@ public:
             }
         }
         return s.top()->val;
+        */
+        target = k;
+        int res = 0;
+        inorder(root, res);
+        return res;
     }
 };
