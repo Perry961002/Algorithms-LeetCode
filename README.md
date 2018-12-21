@@ -1,6 +1,6 @@
 Algorithms change the world
 ==============================
- >>[![MIT license](https://img.shields.io/dub/l/vibe-d.svg)](https://github.com/Perry961002/LeetCode/blob/master/LICENSE)
+ >>![](https://img.shields.io/badge/language-C++-orange.svg) [![MIT license](https://img.shields.io/dub/l/vibe-d.svg)](https://github.com/Perry961002/LeetCode/blob/master/LICENSE)
 
 ![Image text](https://github.com/Perry961002/Algorithms-LeetCode/blob/master/image.jpg)
 
