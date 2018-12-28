@@ -11,7 +11,7 @@ class Solution {
                     continue;
                 }
                 if (board[i][j] <= '9' && board[i][j] >= '1') {
-                    if (test.get(board[i][j] - '0') == test.get(test.size())) // 判断是否存在
+                    if (test.indexOf(board[i][j] - '0') == -1) // 判断是否存在
                     {
                         test.add(board[i][j] - '0');
                     } else {
@@ -30,7 +30,7 @@ class Solution {
             if (board[row][i] == '.') {
                 continue;
             }
-            if (test.get(board[row][i] - '0') == test.get(test.size())) {
+            if (test.indexOf(board[row][i] - '0') == -1) {
                 test.add(board[row][i] - '0');
             } else {
                 return false;
@@ -46,7 +46,7 @@ class Solution {
             if (board[i][colum] == '.') {
                 continue;
             }
-            if (test.get(board[i][colum] - '0') == test.get(test.size())) {
+            if (test.indexOf(board[i][colum] - '0') == -1) {
                 test.add(board[i][colum] - '0');
             } else {
                 return false;
