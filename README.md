@@ -84,7 +84,8 @@ Algorithms change the world
  
  🎉LeetCode刷题:
 ------------------------
-  
+- 感谢[gzh](https://github.com/gzh205)提供了Java的解题代码。
+
 |  ID  |                            Title                             | Difficulty |                     C++                      |                     Java                      |                     Python                      |
 | :--: | :----------------------------------------------------------: | :--------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
 | 001 |		[两数之和](https://leetcode-cn.com/problems/two-sum/)		| Easy | [Code](https://github.com/Perry961002/LeetCode/blob/master/C%2B%2B%E7%89%88/001-%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C.cpp)  |                      [Code](https://github.com/Perry961002/LeetCode/blob/master/Java/001-%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C.java)                      |                      no                      |
