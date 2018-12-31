@@ -74,13 +74,13 @@ Algorithms change the world
  
  - 🔧[309题状态机用到动态规划](https://github.com/Perry961002/LeetCode/blob/master/%E9%83%A8%E5%88%86%E9%A2%98%E7%9B%AE%E7%9A%84%E5%88%86%E6%9E%90%E5%92%8C%E8%AF%81%E6%98%8E/309%E9%A2%98%E7%9A%84%E6%80%9D%E8%B7%AF%E8%A7%A3%E5%86%B3.pdf)
  
- - 🔧[Catalan公式证明(建立双射法)](https://github.com/Perry961002/LeetCode/blob/master/%E9%83%A8%E5%88%86%E9%A2%98%E7%9B%AE%E7%9A%84%E5%88%86%E6%9E%90%E5%92%8C%E8%AF%81%E6%98%8E/Catalan.jpg)
+ - 🔧[Catalan公式证明(建立双射法)](https://github.com/Perry961002/LeetCode/blob/master/%E9%83%A8%E5%88%86%E9%A2%98%E7%9B%AE%E7%9A%84%E5%88%86%E6%9E%90%E5%92%8C%E8%AF%81%E6%98%8E/Catalan.pdf)
  
  - 🔧[回文子串问题(Manacher算法的说明)](https://github.com/Perry961002/LeetCode/blob/master/%E9%83%A8%E5%88%86%E9%A2%98%E7%9B%AE%E7%9A%84%E5%88%86%E6%9E%90%E5%92%8C%E8%AF%81%E6%98%8E/%E5%9B%9E%E6%96%87%E5%AD%90%E4%B8%B2%E9%97%AE%E9%A2%98.pdf)
  
  - 🔧[环链表问题(快慢指针法的证明)](https://github.com/Perry961002/LeetCode/blob/master/%E9%83%A8%E5%88%86%E9%A2%98%E7%9B%AE%E7%9A%84%E5%88%86%E6%9E%90%E5%92%8C%E8%AF%81%E6%98%8E/%E7%8E%AF%E9%93%BE%E8%A1%A8%E9%97%AE%E9%A2%98.pdf)
  
- - 🔧编辑距离问题([算法导论中6种字符操作](https://github.com/Perry961002/LeetCode/blob/master/%E9%83%A8%E5%88%86%E9%A2%98%E7%9B%AE%E7%9A%84%E5%88%86%E6%9E%90%E5%92%8C%E8%AF%81%E6%98%8E/%E7%AE%97%E6%B3%95%E5%AF%BC%E8%AE%BA_%E7%BC%96%E8%BE%91%E8%B7%9D%E7%A6%BB.jpg), [LeetCode中3种字符操作](https://github.com/Perry961002/LeetCode/blob/master/%E9%83%A8%E5%88%86%E9%A2%98%E7%9B%AE%E7%9A%84%E5%88%86%E6%9E%90%E5%92%8C%E8%AF%81%E6%98%8E/%E7%BC%96%E8%BE%91%E8%B7%9D%E7%A6%BB%E9%97%AE%E9%A2%98.pdf))
+ - 🔧编辑距离问题([算法导论中6种字符操作](https://github.com/Perry961002/LeetCode/blob/master/%E9%83%A8%E5%88%86%E9%A2%98%E7%9B%AE%E7%9A%84%E5%88%86%E6%9E%90%E5%92%8C%E8%AF%81%E6%98%8E/%E7%AE%97%E6%B3%95%E5%AF%BC%E8%AE%BA_%E7%BC%96%E8%BE%91%E8%B7%9D%E7%A6%BB.pdf), [LeetCode中3种字符操作](https://github.com/Perry961002/LeetCode/blob/master/%E9%83%A8%E5%88%86%E9%A2%98%E7%9B%AE%E7%9A%84%E5%88%86%E6%9E%90%E5%92%8C%E8%AF%81%E6%98%8E/%E7%BC%96%E8%BE%91%E8%B7%9D%E7%A6%BB%E9%97%AE%E9%A2%98.pdf))
  
  🎉LeetCode刷题:
 ------------------------
