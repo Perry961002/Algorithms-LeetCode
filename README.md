@@ -1,10 +1,10 @@
-Algorithms change the world
-==============================
- >>![](https://img.shields.io/badge/language-C++-read.svg) ![](https://img.shields.io/badge/language-Java-orange.svg) [![MIT license](https://img.shields.io/dub/l/vibe-d.svg)](https://github.com/Perry961002/LeetCode/blob/master/LICENSE)
+# Algorithms change the world
+
+ >>![](https://img.shields.io/badge/language-C++-read.svg) ![](https://img.shields.io/badge/language-Java-yellow.svg) ![](https://img.shields.io/badge/language-Python3-blue.svg)  [![MIT license](https://img.shields.io/dub/l/vibe-d.svg)](https://github.com/Perry961002/LeetCode/blob/master/LICENSE)
 
 ![Image text](https://github.com/Perry961002/Algorithms-LeetCode/blob/master/image.jpg)
 
- 🎉经典算法的实现(使用C++11标准):
+## 经典算法的实现(使用C++11标准):
 -------------------
 - 🔧[逆波兰符实现](https://github.com/Perry961002/LeetCode/blob/master/%E4%B8%80%E4%BA%9B%E7%BB%8F%E5%85%B8%E7%AE%97%E6%B3%95%E7%9A%84%E5%AE%9E%E7%8E%B0/%E9%80%86%E6%B3%A2%E5%85%B0%E7%AC%A6.cpp)
 
@@ -68,7 +68,7 @@ Algorithms change the world
 
     - [有向图的传递闭包求解算法](https://github.com/Perry961002/Algorithms-LeetCode/blob/master/%E4%B8%80%E4%BA%9B%E7%BB%8F%E5%85%B8%E7%AE%97%E6%B3%95%E7%9A%84%E5%AE%9E%E7%8E%B0/%E6%89%80%E6%9C%89%E8%8A%82%E7%82%B9%E5%AF%B9%E7%9A%84%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/Transitive_Closure.cpp)
 
- 🎉部分题目的证明:
+## 部分题目的证明:
  ----------------------
  - 🔧[第287题证明(映射,环检测)](https://github.com/Perry961002/LeetCode/blob/master/%E9%83%A8%E5%88%86%E9%A2%98%E7%9B%AE%E7%9A%84%E5%88%86%E6%9E%90%E5%92%8C%E8%AF%81%E6%98%8E/287%E9%97%AE%E9%A2%98%E5%88%86%E6%9E%90.pdf)
  
@@ -82,9 +82,9 @@ Algorithms change the world
  
  - 🔧编辑距离问题([算法导论中6种字符操作](https://github.com/Perry961002/LeetCode/blob/master/%E9%83%A8%E5%88%86%E9%A2%98%E7%9B%AE%E7%9A%84%E5%88%86%E6%9E%90%E5%92%8C%E8%AF%81%E6%98%8E/%E7%AE%97%E6%B3%95%E5%AF%BC%E8%AE%BA_%E7%BC%96%E8%BE%91%E8%B7%9D%E7%A6%BB.pdf), [LeetCode中3种字符操作](https://github.com/Perry961002/LeetCode/blob/master/%E9%83%A8%E5%88%86%E9%A2%98%E7%9B%AE%E7%9A%84%E5%88%86%E6%9E%90%E5%92%8C%E8%AF%81%E6%98%8E/%E7%BC%96%E8%BE%91%E8%B7%9D%E7%A6%BB%E9%97%AE%E9%A2%98.pdf))
  
- 🎉LeetCode刷题:
+## LeetCode刷题:
 ------------------------
-- 感谢[gzh](https://github.com/gzh205)提供了Java的解题代码。
+- :tada: 感谢[gzh](https://github.com/gzh205)提供了Java的解题代码。
 
 |  ID  |                            Title                             | Difficulty |                     C++                      |                     Java                      |                     Python                      |
 | :--: | :----------------------------------------------------------: | :--------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
