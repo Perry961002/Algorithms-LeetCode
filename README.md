@@ -6,7 +6,6 @@
 
 ## 经典算法的实现(使用C++11标准):
 - 🔧[逆波兰符实现](https://github.com/Perry961002/LeetCode/blob/master/%E4%B8%80%E4%BA%9B%E7%BB%8F%E5%85%B8%E7%AE%97%E6%B3%95%E7%9A%84%E5%AE%9E%E7%8E%B0/%E9%80%86%E6%B3%A2%E5%85%B0%E7%AC%A6.cpp)
-
 - 🔧[Manacher算法](https://github.com/Perry961002/LeetCode/blob/master/%E4%B8%80%E4%BA%9B%E7%BB%8F%E5%85%B8%E7%AE%97%E6%B3%95%E7%9A%84%E5%AE%9E%E7%8E%B0/Manacher.cpp)
 - 🔧字符串匹配算法
     - [朴素字符串匹配算法](https://github.com/Perry961002/Algorithms-LeetCode/blob/master/%E4%B8%80%E4%BA%9B%E7%BB%8F%E5%85%B8%E7%AE%97%E6%B3%95%E7%9A%84%E5%AE%9E%E7%8E%B0/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%8C%B9%E9%85%8D/Naive-String-Macher.cpp)
@@ -14,15 +13,12 @@
     - [Rabin-Karp算法](https://github.com/Perry961002/Algorithms-LeetCode/blob/master/%E4%B8%80%E4%BA%9B%E7%BB%8F%E5%85%B8%E7%AE%97%E6%B3%95%E7%9A%84%E5%AE%9E%E7%8E%B0/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%8C%B9%E9%85%8D/Rabin_Karp_Matcher.cpp)
 
     - [有限自动机的字符串匹配算法](https://github.com/Perry961002/Algorithms-LeetCode/blob/master/%E4%B8%80%E4%BA%9B%E7%BB%8F%E5%85%B8%E7%AE%97%E6%B3%95%E7%9A%84%E5%AE%9E%E7%8E%B0/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%8C%B9%E9%85%8D/Finite_Automaton_Matcher.cpp)
- 
+
     - [KMP算法](https://github.com/Perry961002/Algorithms-LeetCode/blob/master/%E4%B8%80%E4%BA%9B%E7%BB%8F%E5%85%B8%E7%AE%97%E6%B3%95%E7%9A%84%E5%AE%9E%E7%8E%B0/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%8C%B9%E9%85%8D/KMP.cpp)
-
 - 🔧[哈夫曼编码算法](https://github.com/Perry961002/LeetCode/blob/master/%E4%B8%80%E4%BA%9B%E7%BB%8F%E5%85%B8%E7%AE%97%E6%B3%95%E7%9A%84%E5%AE%9E%E7%8E%B0/Huffman.cpp)
-
 - 🔧[快速排序的递归和非递归实现](https://github.com/Perry961002/LeetCode/blob/master/%E4%B8%80%E4%BA%9B%E7%BB%8F%E5%85%B8%E7%AE%97%E6%B3%95%E7%9A%84%E5%AE%9E%E7%8E%B0/QuickSort.cpp)
-
 - 🔧[堆排序和优先队列](https://github.com/Perry961002/LeetCode/blob/master/%E4%B8%80%E4%BA%9B%E7%BB%8F%E5%85%B8%E7%AE%97%E6%B3%95%E7%9A%84%E5%AE%9E%E7%8E%B0/%E5%A0%86%E6%8E%92%E5%BA%8F%E4%B8%8E%E4%BC%98%E5%85%88%E9%98%9F%E5%88%97.cpp)
-
+- 🔧[桶排序](https://github.com/Perry961002/LeetCode/blob/master/%E4%B8%80%E4%BA%9B%E7%BB%8F%E5%85%B8%E7%AE%97%E6%B3%95%E7%9A%84%E5%AE%9E%E7%8E%B0/BucketSort.cpp)
 - 二叉树(以下代码都是在刷LeetCode时写的, 所有只有功能函数, 请见谅！另外前序、中序、后序遍历算法都给出了递归和非递归两种实现方式)
 
     - [二叉树的前序遍历](https://github.com/Perry961002/Algorithms-LeetCode/blob/master/C%2B%2B%E7%89%88/144-%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E5%89%8D%E5%BA%8F%E9%81%8D%E5%8E%86.cpp)
@@ -36,30 +32,23 @@
     - [从前序和中序遍历序列构造二叉树](https://github.com/Perry961002/Algorithms-LeetCode/blob/master/C%2B%2B%E7%89%88/105-%E5%89%8D%E5%BA%8F%E4%B8%AD%E5%BA%8F%E6%9E%84%E9%80%A0%E4%BA%8C%E5%8F%89%E6%A0%91.cpp)
 
     - [从中序和后序遍历序列构造二叉树](https://github.com/Perry961002/Algorithms-LeetCode/blob/master/C%2B%2B%E7%89%88/106-%E4%B8%AD%E5%BA%8F%E5%90%8E%E5%BA%8F%E6%9E%84%E9%80%A0%E4%BA%8C%E5%8F%89%E6%A0%91.cpp)
-
 - 🔧[二叉搜索树(BST)](https://github.com/Perry961002/Algorithms-LeetCode/blob/master/%E4%B8%80%E4%BA%9B%E7%BB%8F%E5%85%B8%E7%AE%97%E6%B3%95%E7%9A%84%E5%AE%9E%E7%8E%B0/BST.cpp)(其中删除节点操作在LeetCode刷题时使用了[递归方法](https://github.com/Perry961002/LeetCode/blob/master/C%2B%2B%E7%89%88/450-%E5%88%A0%E9%99%A4%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%E4%B8%AD%E7%9A%84%E8%8A%82%E7%82%B9.cpp), 中序遍历给出了递归、使用栈的非递归以及不使用栈的非递归实现)
-
 - 🔧[一种自平衡二叉搜索树---红黑树](https://github.com/Perry961002/Algorithms-LeetCode/blob/master/%E4%B8%80%E4%BA%9B%E7%BB%8F%E5%85%B8%E7%AE%97%E6%B3%95%E7%9A%84%E5%AE%9E%E7%8E%B0/RB_Tree)
-
 - 🔧图的两种遍历方式
     - [广度优先遍历](https://github.com/Perry961002/Algorithms-LeetCode/blob/master/%E4%B8%80%E4%BA%9B%E7%BB%8F%E5%85%B8%E7%AE%97%E6%B3%95%E7%9A%84%E5%AE%9E%E7%8E%B0/Graph_Search/BFS.cpp) 这种方式最终会生成关于图的一棵广度优先树, 得到源点s到其余点的最短路径(边数最少)
 
     - [深度优先遍历](https://github.com/Perry961002/Algorithms-LeetCode/blob/master/%E4%B8%80%E4%BA%9B%E7%BB%8F%E5%85%B8%E7%AE%97%E6%B3%95%E7%9A%84%E5%AE%9E%E7%8E%B0/Graph_Search/DFS.cpp) 这种方式最终会生成关于图的深度优先森林, 节点访问时间和结束时间具有括号化结构
-
 - 🔧[有向无环图的拓扑排序算法](https://github.com/Perry961002/Algorithms-LeetCode/blob/master/%E4%B8%80%E4%BA%9B%E7%BB%8F%E5%85%B8%E7%AE%97%E6%B3%95%E7%9A%84%E5%AE%9E%E7%8E%B0/Topological_Sort.cpp)
-
 - 🔧最小生成树
     - [Kruskal算法](https://github.com/Perry961002/Algorithms-LeetCode/blob/master/%E4%B8%80%E4%BA%9B%E7%BB%8F%E5%85%B8%E7%AE%97%E6%B3%95%E7%9A%84%E5%AE%9E%E7%8E%B0/%E6%9C%80%E5%B0%8F%E7%94%9F%E6%88%90%E6%A0%91/Kruskal.cpp)
 
     - [Prim算法](https://github.com/Perry961002/Algorithms-LeetCode/blob/master/%E4%B8%80%E4%BA%9B%E7%BB%8F%E5%85%B8%E7%AE%97%E6%B3%95%E7%9A%84%E5%AE%9E%E7%8E%B0/%E6%9C%80%E5%B0%8F%E7%94%9F%E6%88%90%E6%A0%91/Prim.cpp)
-
 - 🔧单源点最短路径
     - [一般情况下的Bellman-Ford算法](https://github.com/Perry961002/Algorithms-LeetCode/blob/master/%E4%B8%80%E4%BA%9B%E7%BB%8F%E5%85%B8%E7%AE%97%E6%B3%95%E7%9A%84%E5%AE%9E%E7%8E%B0/%E5%8D%95%E6%BA%90%E7%82%B9%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84/Bellman_Ford.cpp)
 
     - [有向无环图的基于拓扑排序的DAG算法](https://github.com/Perry961002/Algorithms-LeetCode/blob/master/%E4%B8%80%E4%BA%9B%E7%BB%8F%E5%85%B8%E7%AE%97%E6%B3%95%E7%9A%84%E5%AE%9E%E7%8E%B0/%E5%8D%95%E6%BA%90%E7%82%B9%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84/DAG_Shortest_Paths.cpp)
 
     - [使用动态规划的非负权重有向图的Dijkstra算法](https://github.com/Perry961002/Algorithms-LeetCode/blob/master/%E4%B8%80%E4%BA%9B%E7%BB%8F%E5%85%B8%E7%AE%97%E6%B3%95%E7%9A%84%E5%AE%9E%E7%8E%B0/%E5%8D%95%E6%BA%90%E7%82%B9%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84/Dijkstra.cpp)
-
 - 🔧所有节点对最短路径
     - [基于重复平方矩阵乘法的动态规划算法](https://github.com/Perry961002/Algorithms-LeetCode/blob/master/%E4%B8%80%E4%BA%9B%E7%BB%8F%E5%85%B8%E7%AE%97%E6%B3%95%E7%9A%84%E5%AE%9E%E7%8E%B0/%E6%89%80%E6%9C%89%E8%8A%82%E7%82%B9%E5%AF%B9%E7%9A%84%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/Faster_APSP.cpp)
 
@@ -69,17 +58,17 @@
 
 ## 部分题目的证明:
  - 🔧[第287题证明(映射,环检测)](https://github.com/Perry961002/LeetCode/blob/master/%E9%83%A8%E5%88%86%E9%A2%98%E7%9B%AE%E7%9A%84%E5%88%86%E6%9E%90%E5%92%8C%E8%AF%81%E6%98%8E/287%E9%97%AE%E9%A2%98%E5%88%86%E6%9E%90.pdf)
- 
+
  - 🔧[309题状态机用到动态规划](https://github.com/Perry961002/LeetCode/blob/master/%E9%83%A8%E5%88%86%E9%A2%98%E7%9B%AE%E7%9A%84%E5%88%86%E6%9E%90%E5%92%8C%E8%AF%81%E6%98%8E/309%E9%A2%98%E7%9A%84%E6%80%9D%E8%B7%AF%E8%A7%A3%E5%86%B3.pdf)
- 
+
  - 🔧[Catalan公式证明(建立双射法)](https://github.com/Perry961002/LeetCode/blob/master/%E9%83%A8%E5%88%86%E9%A2%98%E7%9B%AE%E7%9A%84%E5%88%86%E6%9E%90%E5%92%8C%E8%AF%81%E6%98%8E/Catalan.pdf)
- 
+
  - 🔧[回文子串问题(Manacher算法的说明)](https://github.com/Perry961002/LeetCode/blob/master/%E9%83%A8%E5%88%86%E9%A2%98%E7%9B%AE%E7%9A%84%E5%88%86%E6%9E%90%E5%92%8C%E8%AF%81%E6%98%8E/%E5%9B%9E%E6%96%87%E5%AD%90%E4%B8%B2%E9%97%AE%E9%A2%98.pdf)
- 
+
  - 🔧[环链表问题(快慢指针法的证明)](https://github.com/Perry961002/LeetCode/blob/master/%E9%83%A8%E5%88%86%E9%A2%98%E7%9B%AE%E7%9A%84%E5%88%86%E6%9E%90%E5%92%8C%E8%AF%81%E6%98%8E/%E7%8E%AF%E9%93%BE%E8%A1%A8%E9%97%AE%E9%A2%98.pdf)
- 
+
  - 🔧编辑距离问题([算法导论中6种字符操作](https://github.com/Perry961002/LeetCode/blob/master/%E9%83%A8%E5%88%86%E9%A2%98%E7%9B%AE%E7%9A%84%E5%88%86%E6%9E%90%E5%92%8C%E8%AF%81%E6%98%8E/%E7%AE%97%E6%B3%95%E5%AF%BC%E8%AE%BA_%E7%BC%96%E8%BE%91%E8%B7%9D%E7%A6%BB.pdf), [LeetCode中3种字符操作](https://github.com/Perry961002/LeetCode/blob/master/%E9%83%A8%E5%88%86%E9%A2%98%E7%9B%AE%E7%9A%84%E5%88%86%E6%9E%90%E5%92%8C%E8%AF%81%E6%98%8E/%E7%BC%96%E8%BE%91%E8%B7%9D%E7%A6%BB%E9%97%AE%E9%A2%98.pdf))
- 
+
 ## LeetCode刷题:
 - :tada: 感谢[gzh](https://github.com/gzh205)提供了Java的解题代码。
 
