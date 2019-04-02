@@ -1,6 +1,6 @@
 # Algorithms change the world
 
- >>![](https://img.shields.io/badge/language-C++-read.svg) ![](https://img.shields.io/badge/language-Java-yellow.svg) ![](https://img.shields.io/badge/language-Python3-blue.svg)  [![MIT license](https://img.shields.io/dub/l/vibe-d.svg)](https://github.com/Perry961002/LeetCode/blob/master/LICENSE)
+![](https://img.shields.io/badge/language-C++-read.svg) ![](https://img.shields.io/badge/language-Java-yellow.svg) ![](https://img.shields.io/badge/language-Python3-blue.svg)  [![MIT license](https://img.shields.io/dub/l/vibe-d.svg)](https://github.com/Perry961002/LeetCode/blob/master/LICENSE) [![996.icu](https://img.shields.io/badge/link-996.icu-red.svg)](https://996.icu)
 
 ![Image text](image.jpg)
 
