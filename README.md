@@ -1,6 +1,6 @@
 # Algorithms change the world
 
-![](https://img.shields.io/badge/language-C++-read.svg)	![](https://img.shields.io/badge/language-Java-yellow.svg)	![](https://img.shields.io/badge/language-Python3-blue.svg)	![](https://img.shields.io/badge/language-Go-blue.svg)	[![MIT license](https://img.shields.io/dub/l/vibe-d.svg) ](https://github.com/Perry961002/LeetCode/blob/master/LICENSE)
+[![C++](https://img.shields.io/badge/language-C++-read.svg)](https://github.com/Perry961002/Algorithms-LeetCode#leetcode%E5%88%B7%E9%A2%98)	[![Java](https://img.shields.io/badge/language-Java-yellow.svg)](https://github.com/Perry961002/Algorithms-LeetCode#leetcode%E5%88%B7%E9%A2%98)	[![Python](https://img.shields.io/badge/language-Python3-blue.svg)](https://github.com/Perry961002/Algorithms-LeetCode#leetcode%E5%88%B7%E9%A2%98)	[![Go](https://img.shields.io/badge/language-Go-blue.svg)](https://github.com/Perry961002/Algorithms-LeetCode#leetcode%E5%88%B7%E9%A2%98)	[![MIT license](https://img.shields.io/dub/l/vibe-d.svg) ](https://github.com/Perry961002/LeetCode/blob/master/LICENSE)
 
 ![Image text](image.jpg)
 
